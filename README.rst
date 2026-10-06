@@ -1,4 +1,4 @@
 TIPMIP
 ======
 
-TIPMIP is a ....
+This repository contains the source for TIPMIP documentation.
