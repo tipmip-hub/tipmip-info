@@ -30,5 +30,6 @@ these have been made available under CMIP6Plus. For more information see
    cmip
    protocol/index
    availability
+   helpers
    terms-of-use
    contact
