@@ -28,10 +28,9 @@ If you have tools for working with TIPMIP-ESM data that you would like to share,
    * - There are no model description files for the model versions used here. Separate requests by each user cause a lot of work.
      - **Model specification list**, to be filled in by the modelling centers: `spreadsheet <https://docs.google.com/spreadsheets/d/16LpV8O-zc5l927L7rajtT8URToUO5xEhpp7gpIxBcio/edit?gid=0#gid=0>`__
      - Not all centers have filled it in, but the existing entries are still useful.
-   * - Translation of results to temperature space.
-     - Method by Jakob Harteg (`jakob.harteg[at]pik-potsdam.de <mailto:jakob.harteg@pik-potsdam.de>`__).
-       Code: *(link to be added)*
-     - The accompanying paper is in review. The code is already accessible.
+   * - Models reach a given warming level at different times, so results are hard to compare along the time axis.
+     - **tipmip-gwl:** Open source Python library that maps TIPMIP-ESM simulations from the time axis to a common global-warming-level axis, so that models can be compared directly. Code and tutorials: https://github.com/tipmip-hub/tipmip-gwl
+     - The accompanying paper has been submitted to GMD. Contact: Jakob Harteg (jakob.harteg[at]pik-potsdam.de)
    * - Everyone has to do the same basic time series analysis on data with many irregularities.
      - **TIPMIP DKRZ data processing pipeline**: `tipmip-dkrz-data-processing <https://gitlab.pik-potsdam.de/karoline/tipmip-dkrz-data-processing>`__
      - See also the known problems per model.
@@ -43,7 +42,7 @@ If you have tools for working with TIPMIP-ESM data that you would like to share,
      - Limitations: only the metadata of simple variables is converted (not a full CMORization), the method may be imperfect, and only a few people have write access.
        It works only for the simple variables listed in the CESM conversion tab of the `pre-ESGF data request <https://docs.google.com/spreadsheets/d/1VkA2nagWDaZKHgcKEShi8h5Txou3K0kmoNNDGl-TnRs/edit?gid=0#gid=0>`__ (limited access).
        Please contact karoline[at]pik-potsdam.de for problems.
-   * - Analysis of abrupt shifts.
-     - **TOAD**: *(short description and link to be added by Jakob Harteg)*
-     -
+   * - Detecting abrupt shifts consistently across a large multi-model ensemble is hard, and everyone builds their own detection setup.
+     - **TOAD**: open-source Python framework for detecting abrupt shifts in gridded Earth-system data. It detects shifts at grid-cell level, clusters them into coherent regions, and identifies shifts that agree across ensemble members, models or method settings. Modular, so you can plug in your own detection methods. Code, docs and tutorials: https://github.com/tipmip-hub/toad
+     - A description paper is in review at GMD (preprint available[https://egusphere.copernicus.org/preprints/2026/egusphere-2026-356/]). Contributions are very welcome. Contact: Jakob Harteg (jakob.harteg[at]pik-potsdam.de)
 
