@@ -9,8 +9,8 @@ If you have tools for working with TIPMIP-ESM data that you would like to share,
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 45 35
-   :class: tipmip-table
+   :widths: 25 45 30
+   :class: grid
 
    * - Issue
      - Solution
